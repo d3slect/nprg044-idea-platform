@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>cz.cuni.mff.d3s.srtplugin</id>
+    <name>Srt (Subrip subtitle format) plugin</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="cz.cuni.mff.d3s.srtplugin.SrtFileTypeFactory"/>
+
+        <lang.parserDefinition language="Srt" implementationClass="cz.cuni.mff.d3s.srtplugin.SrtParserDefinition"/>
+
+        <lang.syntaxHighlighterFactory language="Srt" implementationClass="cz.cuni.mff.d3s.srtplugin.SrtSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="cz.cuni.mff.d3s.srtplugin.SrtColorSettingsPage"/>
+    </extensions>
+
+    <actions>
+        <group id="SrtPlugin.SampleMenu" text="Greeting" description="Greeting menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="Srtplugin.Textboxes" class="cz.cuni.mff.d3s.srtplugin.HelloAction" text="Hello" description="Says hello"/>
+        </group>
+    </actions>
+</idea-plugin>

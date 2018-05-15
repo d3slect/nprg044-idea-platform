@@ -1,0 +1,22 @@
+{
+  parserClass="cz.cuni.mff.d3s.srtplugin.SrtParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Srt"
+  psiImplClassSuffix="Impl"
+  psiPackage="cz.cuni.mff.d3s.srtplugin.psi"
+  psiImplPackage="cz.cuni.mff.d3s.srtplugin.psi.impl"
+
+  elementTypeHolderClass="cz.cuni.mff.d3s.srtplugin.psi.SrtTypes"
+  elementTypeClass="cz.cuni.mff.d3s.srtplugin.psi.SrtElementType"
+  tokenTypeClass="cz.cuni.mff.d3s.srtplugin.psi.SrtTokenType"
+}
+
+srtFile ::= subtitle (CRLF subtitle)*
+
+subtitle ::= COUNTER CRLF
+             timeRange CRLF
+             TEXT_WITH_NEWLINES CRLF
+
+timeRange ::= TIME ARROW TIME
