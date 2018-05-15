@@ -4,6 +4,9 @@ The materials for for the IntelliJ IDEA part of the course [Java UI - NPRG044](h
 
 ## References:
 [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+
 [Kotlin programming language](https://kotlinlang.org/)
+
 [IntelliJ Platform SDK DevGuide](https://www.jetbrains.org/intellij/sdk/docs/welcome.html)
+
 [Grammar-Kit github repository](https://github.com/JetBrains/Grammar-Kit) (contains examples of grammars)
