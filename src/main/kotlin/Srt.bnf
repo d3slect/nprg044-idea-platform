@@ -11,12 +11,14 @@
   elementTypeHolderClass="cz.cuni.mff.d3s.srtplugin.psi.SrtTypes"
   elementTypeClass="cz.cuni.mff.d3s.srtplugin.psi.SrtElementType"
   tokenTypeClass="cz.cuni.mff.d3s.srtplugin.psi.SrtTokenType"
+
+  psiImplUtilClass="cz.cuni.mff.d3s.srtplugin.psi.impl.SrtPsiImplUtil"
 }
 
 srtFile ::= subtitle (CRLF subtitle)*
 
 subtitle ::= COUNTER CRLF
              timeRange CRLF
-             TEXT_WITH_NEWLINES CRLF
+             TEXT_WITH_NEWLINES CRLF {methods=[getCounter getCounterNode getTextContent]}
 
 timeRange ::= TIME ARROW TIME

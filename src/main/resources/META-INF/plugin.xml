@@ -15,6 +15,10 @@
 
         <lang.syntaxHighlighterFactory language="Srt" implementationClass="cz.cuni.mff.d3s.srtplugin.SrtSyntaxHighlighterFactory"/>
         <colorSettingsPage implementation="cz.cuni.mff.d3s.srtplugin.SrtColorSettingsPage"/>
+
+        <annotator language="Srt" implementationClass="cz.cuni.mff.d3s.srtplugin.SrtAnnotator"/>
+
+        <lang.psiStructureViewFactory language="Srt" implementationClass="cz.cuni.mff.d3s.srtplugin.SrtStructureViewFactory"/>
     </extensions>
 
     <actions>

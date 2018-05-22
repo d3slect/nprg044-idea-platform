@@ -17,7 +17,6 @@ class SrtParserDefinition : ParserDefinition {
 
     private companion object {
         val WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE)
-//        val COMMENTS = TokenSet.create(TokenType.WHITE_SPACE)
         val FILE = IFileElementType(SrtLanguage)
     }
 
